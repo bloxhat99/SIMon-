@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MAROD Store - Sports Clothing.">
+    <meta name="description" content="MAROD Store - Articles Sports.">
+    <title>MAROD Store</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .logo {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ff0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ff0;
+            font-size: 18px;
+        }
+        nav ul li a::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #ff0;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        nav ul li a:hover::after {
+            opacity: 1;
+        }
+
+        .line {
+            width: 100%;
+            height: 2px;
+            background-color: #ff0;
+            margin: 10px 0;
+        }
+
+        .events {
+            text-align: center;
+            font-size: 12px;
+            color: #ff0;
+            margin-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            text-align: center;
+            background-color: #222;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border: none;
+            background-color: #ff0;
+            color: #000;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .large-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .cart {
+            padding: 20px;
+            background-color: #222;
+        }
+
+        .cart ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cart ul li {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .cart ul li img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .cart button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #ff0;
+            color: #000;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-container {
+            margin-top: 20px;
+        }
+
+        .form-container input, .form-container button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .form-container button {
+            background-color: #ff0;
+            color: #000;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MAROD</div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">HOME</a></li>
+                <li><a href="#" onclick="showPage('mens')">MEN'S</a></li>
+                <li><a href="#" onclick="showPage('womens')">WOMEN'S</a></li>
+                <li><a href="#" onclick="showPage('sa')">S.A.</a></li> 
+                <li><a href="#" onclick="showPage('cart')">CART</a></li>
+            </ul>
+        </nav>
+        <div class="line"></div>
+        <div class="events">
+            <a href="https://intermoda.com.mx/" target="_blank">SOME EVENTS HERE</a> | <a href="https://fashionunited.es/noticias/moda" target="_blank">SOME NEWS HERE</a> | <a href="https://youtu.be/B5ElvV5cyFg?si=sG-UZderkZ_NOkA3" target="_blank"> A NEW VIDEO </a>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <img src="https://images.pexels.com/photos/102129/pexels-photo-102129.jpeg?cs=srgb&dl=pexels-daiangan-102129.jpg&fm=jpg" alt="Welcome to MAROD" class="large-image">
+            <h1>Welcome to MAROD Store!</h1>
+            <p>Find us on all our social networks</p>
+            <p1>MAROD is a trendy fashion boutique offering a curated collection of stylish, high-quality clothing for every occasion. From casual wear to elegant pieces, MAROD combines comfort with cutting-edge design to bring you the latest trends. Whether you're looking for bold statement pieces or timeless wardrobe essentials, MAROD has something for everyone. Our passion for fashion is reflected in every carefully selected item, ensuring you step out in confidence and style. Discover the perfect blend of modern sophistication and everyday comfort at MAROD.</p1>
+            <br>
+            <p2>@MAROD on on Instagramk ||</p2>
+            <p3>@MAROD on on Facebook ||</p3>
+            <p4>@MAROD on on Youtube.</p4>
+            <br>
+            <p5>IMAGES REFERENCES: armour.com.mx/es-mx/ </p6>
+            <br>
+            <p5>IMAGES REFERENCES: https://www.danskin.com/ </p6>
+            <br>
+            <p5>IMAGES REFERENCES: https://www.stanhome.com.mx</p6>
+            <br>
+            <p5>VIDEO REFERENCE: https://cocovisualscr.com/ </p6>
+        </section>
+
+        <section id="mens" style="display:none;">
+            <h2>Men's Products</h2>
+            <div class="grid">
+                <div class="product">
+                    <img src="https://ae01.alicdn.com/kf/Scd04bf3f9dc743b9beeb32b4c1121fcf3/Ch-ndal-de-moda-con-capucha-para-hombre-conjunto-de-ropa-deportiva-para-gimnasio-correr-traje.jpg" alt="Men's Product 1">
+                    <p>Men's Hoodie - $50</p>
+                    <button onclick="addToCart('Men\'s Jacket - $50', 'https://ae01.alicdn.com/kf/Scd04bf3f9dc743b9beeb32b4c1121fcf3/Ch-ndal-de-moda-con-capucha-para-hombre-conjunto-de-ropa-deportiva-para-gimnasio-correr-traje.jpg')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i5.walmartimages.com/asr/69df45af-6333-4d02-8e8e-1e918ed0ce7a.63a4013ac9cb0db6c7dc8c4c85787c3e.webp?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Men's Product 2">
+                    <p>Men's Hoodie- $80</p>
+                    <button onclick="addToCart('Men\'s Shoes - $80', 'https://i5.walmartimages.com/asr/69df45af-6333-4d02-8e8e-1e918ed0ce7a.63a4013ac9cb0db6c7dc8c4c85787c3e.webp?odnHeight=612&odnWidth=612&odnBg=FFFFFF')">Add to Cart</button>    
+                </div>
+                <div class="product">
+                    <img src="https://i5.walmartimages.com/asr/4751274e-5efa-472b-a618-f3bc6e3cc722.f0029dadac7eb3dc1c7351547137ecc9.webp?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Men's Product 3">
+                    <p>Men's Hoodie- $120</p>
+                    <button onclick="addToCart('Men\'s Watch - $120', 'https://i5.walmartimages.com/asr/4751274e-5efa-472b-a618-f3bc6e3cc722.f0029dadac7eb3dc1c7351547137ecc9.webp?odnHeight=612&odnWidth=612&odnBg=FFFFFF')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="womens" style="display:none;">
+            <h2>Women's Products</h2>
+            <div class="grid">
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Wqi4-Ame-FCjLI1_nU7VP7hVrjOo-NpwAN8t48OhIXe4mXfccUO_SiPlGCYAxJaB_LM&usqp=CAU" alt="Women's Product 1">
+                    <p>Women's T-hirt - $70 </p>
+                    <button onclick="addToCart('Women\'s Dress - $60', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Wqi4-Ame-FCjLI1_nU7VP7hVrjOo-NpwAN8t48OhIXe4mXfccUO_SiPlGCYAxJaB_LM&usqp=CAU')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00750644252966l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Women's Product 2">
+                    <p>Women's T-hirt - $90</p>
+                    <button onclick="addToCart('Women\'s Shoes - $90', 'https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00750644252966l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750644258396L.jpg" alt="Women's Product 3">
+                    <p>Women's T-hirt - $150</p>
+                    <button onclick="addToCart('Women\'s Watch - $150', 'https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750644258396L.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sa" style="display:none;">
+            <h2>S.A. Products</h2>
+            <div class="grid">
+                <div class="product">
+                    <img src="https://cdn1.coppel.com/images/catalog/mkp/5265/3000/52652589-1.jpg" alt="S.A. Product 1">
+                    <p>S.A. Bottle - $55</p>
+                    <button onclick="addToCart('S.A. Jacket - $55', 'https://cdn1.coppel.com/images/catalog/mkp/5265/3000/52652589-1.jpg')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://www.stanhome.com.mx/cdn/shop/products/Y30072.jpg?v=1681838785" alt="S.A. Product 2">
+                    <p>S.A. Bottle - $75</p>
+                    <button onclick="addToCart('S.A. Shoes - $75', 'https://www.stanhome.com.mx/cdn/shop/products/Y30072.jpg?v=1681838785')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://underarmour.scene7.com/is/image/Underarmour/1380267-400_SLFADD_SL?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708" alt="S.A. Product 3">
+                    <p>S.A. Bottle - $95</p>
+                    <button onclick="addToCart('S.A. Watch - $95', 'https://underarmour.scene7.com/is/image/Underarmour/1380267-400_SLFADD_SL?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="cart" style="display:none;">
+            <h2>Shopping Cart</h2>
+            <div class="cart">
+                <ul id="cart-items"></ul>
+                <button onclick="checkout()">Buy All</button>
+            </div>
+            <div class="form-container" id="checkout-form" style="display:none;">
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="Address" required>
+                <input type="text" placeholder="Credit Card Number" required>
+                <button onclick="completePurchase()">Complete Purchase</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const cart = [];
+
+        function showPage(pageId) {
+            const sections = document.querySelectorAll("section");
+            sections.forEach(section => section.style.display = "none");
+            document.getElementById(pageId).style.display = "block";
+        }
+
+        function addToCart(itemName, itemImage) {
+            cart.push({ name: itemName, image: itemImage });
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById('cart-items');
+            cartItems.innerHTML = '';
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = `<img src="${item.image}" alt="${item.name}" /> ${item.name}`;
+                cartItems.appendChild(li);
+            });
+        }
+
+        function checkout() {
+            document.getElementById('checkout-form').style.display = 'block';
+        }
+
+        function completePurchase() {
+            alert("Thank you for your purchase!");
+            cart.length = 0;
+            updateCart();
+            document.getElementById('checkout-form').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
